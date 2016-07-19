@@ -23,8 +23,11 @@
           <td><%= post.content %></td>
           <td><%= post.user.email %></td>
           <td><%= post.created_at %></td>
-        </tr>  
+        </tr>
       <% end %>
     </tbody>
   </table>
+  <div class="text-center">
+    <%= will_paginate @posts %>
+  </div>
 </div>
